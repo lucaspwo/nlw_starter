@@ -1,9 +1,22 @@
+:root {
+    --title-color: #322153;
+}
+
 html {
     font-family: 'Roboto', sans-serif;
 }
 
 body {
     background: #f0f0f5
+}
+
+a {
+    text-decoration:  none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--title-color);
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #page-home {
@@ -19,6 +32,7 @@ body {
 }
 
 #page-home header {
+    margin-top: 48px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,7 +40,8 @@ body {
 
 #page-home header a {
     display: flex;
-    color: #3222153;
+    color: var(--title-color);
+    font-weight: 700;
 }
 
 #page-home header a span {
@@ -35,4 +50,12 @@ body {
     background-image: url('../assets/icones/log-in.svg');
     width: 20px;
     height: 20px;
+}
+
+#page-home main {
+    max-width: 560px;
+}
+
+#page-home main h1 {
+    font-size: 54px;
 }
